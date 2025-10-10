@@ -11,6 +11,10 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles.css" />
+    <script
+      src="https://kit.fontawesome.com/a336628925.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
@@ -22,18 +26,14 @@
           <div class="nav__bar--links">
             <ul>
               <li class="nav__link">
-                <a href="">Inicio</a>
+                <a href="#servicios">Servicios</a>
               </li>
               <div class="nav__link--separator"></div>
               <li class="nav__link">
-                <a href="">Cómo funciona</a>
-              </li>
-              <div class="nav__link--separator"></div>
-              <li class="nav__link">
-                <a href="">Servicios</a>
+                <a href="#como">Cómo funciona</a>
               </li>
               <li class="nav__link--contact">
-                <a href="">Contacto</a>
+                <a href=""><button class="contact--button">Contacto</button></a>
               </li>
             </ul>
           </div>
@@ -41,23 +41,131 @@
       </section>
       <section id="main__page">
         <div class="row">
+          <div class="main__page--text">
+            <span>Automatiza.</span>
+            <span>Simplifica.</span>
+            <span>Fluye.</span>
+            <p class="main__page--description">
+              Conectamos tus herramientas y construimos automatizaciones
+              inteligentes para que tu equipo gane horas cada semana.
+            </p>
+          </div>
+          <figure class="header__img--wrapper">
+            <img
+              class="header__img"
+              src="./assets/undraw_visionary-technology_f6b3.svg"
+              alt=""
+            />
+          </figure>
+        </div>
+      </section>
+      <section id="servicios">
+        <div class="row">
           <div class="container">
-            <div class="main__page--text">
-              <span>Automatiza.</span>
-              <span>Simplifica.</span>
-              <span>Fluye.</span>
-              <p class="main__page--description">
-                Conectamos tus herramientas y construimos automatizaciones
-                inteligentes para que tu equipo gane horas cada semana.
-              </p>
+            <h2>Servicios</h2>
+            <div class="servicios__wrapper">
+              <div class="servicio">
+                <div class="service__icon">
+                  <i
+                    class="fa-solid fa-calendar-days"
+                    style="color: #8782e8"
+                  ></i>
+                </div>
+                <div class="service__title">Agendador Inteligente</div>
+                <div class="service__description">
+                  <p>
+                    Automatiza tus citas con recordatorios por correo o
+                    WhatsApp. Sin olvidos ni dobles reservas.
+                  </p>
+                </div>
+                <div class="service__underline1"></div>
+              </div>
+              <div class="servicio">
+                <div class="service__icon">
+                  <i
+                    class="fa-solid fa-envelopes-bulk"
+                    style="color: #8782e8"
+                  ></i>
+                </div>
+                <div class="service__title">Correo Automatizado</div>
+                <div class="service__description">
+                  <p>
+                    Envía mensajes personalizados: bienvenida, seguimiento o
+                    confirmación, sin mover un dedo.
+                  </p>
+                </div>
+                <div class="service__underline2"></div>
+              </div>
+              <div class="servicio">
+                <div class="service__icon">
+                  <i
+                    class="fa-brands fa-square-whatsapp"
+                    style="color: #8782e8"
+                  ></i>
+                  <i
+                    class="fa-brands fa-facebook-messenger"
+                    style="color: #8782e8"
+                  ></i>
+                </div>
+                <div class="service__title">Mensajería</div>
+                <div class="service__description">
+                  <p>
+                    Responde consultas, confirma pedidos y envía avisos
+                    automáticos a tus clientes.
+                  </p>
+                </div>
+                <div class="service__underline3"></div>
+              </div>
+              <div class="servicio">
+                <div class="service__icon">
+                  <i
+                    class="fa-brands fa-square-facebook"
+                    style="color: #8782e8"
+                  ></i>
+                  <i
+                    class="fa-brands fa-square-instagram"
+                    style="color: #8782e8"
+                  ></i>
+                </div>
+                <div class="service__title">Gestor de Redes</div>
+                <div class="service__description">
+                  <p>
+                    Programa publicaciones, responde comentarios y recibe
+                    reportes semanales de desempeño.
+                  </p>
+                </div>
+                <div class="service__underline4"></div>
+              </div>
+              <div class="servicio">
+                <div class="service__icon">
+                  <i class="fa-solid fa-file-lines" style="color: #8782e8"></i>
+                </div>
+                <div class="service__title">Reportes Instantáneos</div>
+                <div class="service__description">
+                  <p>
+                    Recibe resúmenes automáticos de tus métricas clave: ventas,
+                    citas o actividad diaria.
+                  </p>
+                </div>
+                <div class="service__underline5"></div>
+              </div>
+              <div class="servicio">
+                <div class="service__icon">
+                  <i
+                    class="fa-solid fa-chart-diagram"
+                    style="color: #8782e8"
+                  ></i>
+                </div>
+                <div class="service__title">Flujos Personalizados</div>
+                <div class="service__description">
+                  <p>
+                    Conecta tus herramientas y diseña automatizaciones a tu
+                    medida.
+                  </p>
+                </div>
+                <div class="service__underline6"></div>
+              </div>
             </div>
-            <figure class="header__img--wrapper">
-              <img
-                class="header__img"
-                src="./assets/undraw_visionary-technology_f6b3.svg"
-                alt=""
-              />
-            </figure>
           </div>
         </div>
       </section>
