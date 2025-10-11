@@ -284,43 +284,54 @@ p {
 
 .como__workflow--wrapper {
   display: flex;
-  flex-direction: column;
-  height: 60vh;
+  height: 400px;
+  justify-content: space-between;
 }
 
-.steps__wrapper {
-  width: 100%;
-  height: 15%;
+.steps {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  width: 150px;
+  justify-content: space-between;
 }
-
-.step1 {
-  height: 100%;
-  width: calc(95% / 4);
-  transition: all 100ms ease;
+.step {
   display: flex;
   align-items: center;
   justify-content: center;
   border-top: 1px solid #e9e7ffff;
+  border-bottom: 1px solid #e9e7ffff;
   border-left: 1px solid #e9e7ffff;
-  border-right: 1px solid #e9e7ffff;
+  background-color: #e9e7ff3a;
+  width: 100%;
+  height: calc(95% / 4);
+  transition: all 100ms ease;
   position: relative;
 }
 
-.step__title {
-  font-size: 1.2rem;
-}
-
-.step1:hover {
+.step:hover {
+  background-color: rgba(255, 255, 255, 1);
   cursor: pointer;
-  transform: translateY(5px);
-  border-bottom: none;
-  box-shadow: none;
-  background-color: rgba(248, 248, 248, 1);
 }
 
+.step1:hover .step__description1,
+.step2:hover .step__description2,
+.step3:hover .step__description3,
+.step4:hover .step__description4 {
+  background-color: rgba(254, 200, 47, 1);
+}
 
+.step__description1,
+.step__description2,
+.step__description3,
+.step__description4 {
+  position: absolute;
+  height: 97px;
+  width: 600px;
+  background-color: black;
+  left: 150px;
+  top: -1px;
+  transition: all ease 300ms;
+}
 
 @media (max-width: 1200px) {
   .main__page--text {
