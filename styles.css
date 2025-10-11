@@ -290,10 +290,13 @@ p {
 
 .steps {
   display: flex;
+  position: relative;
   flex-direction: column;
-  width: 150px;
+  width: 400px;
   justify-content: space-between;
+  z-index: 1;
 }
+
 .step {
   display: flex;
   align-items: center;
@@ -304,20 +307,14 @@ p {
   background-color: #e9e7ff3a;
   width: 100%;
   height: calc(95% / 4);
-  transition: all 100ms ease;
+  transition: all 200ms ease;
   position: relative;
 }
 
 .step:hover {
   background-color: rgba(255, 255, 255, 1);
   cursor: pointer;
-}
-
-.step1:hover .step__description1,
-.step2:hover .step__description2,
-.step3:hover .step__description3,
-.step4:hover .step__description4 {
-  background-color: rgba(254, 200, 47, 1);
+  width: 50%;
 }
 
 .step__description1,
@@ -326,11 +323,21 @@ p {
 .step__description4 {
   position: absolute;
   height: 97px;
-  width: 600px;
-  background-color: black;
-  left: 150px;
+  right: 0;
+  background-color: white;
   top: -1px;
-  transition: all ease 300ms;
+  transition: all ease 200ms;
+  z-index: -1;
+}
+
+.step1:hover .step__description1,
+.step2:hover .step__description2,
+.step3:hover .step__description3,
+.step4:hover .step__description4 {
+  background-color: rgba(254, 200, 47, 1);
+  display: block;
+  left: 200px;
+  width: 500px;
 }
 
 @media (max-width: 1200px) {
