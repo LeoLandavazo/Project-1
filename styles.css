@@ -345,6 +345,10 @@ footer {
   width: 100%;
   height: 200px;
   background-color: rgba(254, 200, 47, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #contactanos h2 {
