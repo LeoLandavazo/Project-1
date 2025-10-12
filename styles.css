@@ -337,9 +337,19 @@ p {
 .step3:hover .step__description3,
 .step4:hover .step__description4 {
   background-color: rgba(254, 200, 47, 1);
-  width: 500px;
+  width: 700px;
 }
 
+footer {
+  margin-top: 50px;
+  width: 100%;
+  height: 200px;
+  background-color: rgba(254, 200, 47, 1);
+}
+
+#contactanos h2 {
+  font-size: 36px;
+}
 @media (max-width: 1200px) {
   .main__page--text {
     font-size: 70px;
